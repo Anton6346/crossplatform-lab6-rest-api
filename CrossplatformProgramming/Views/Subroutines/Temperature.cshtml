@@ -1,0 +1,23 @@
+﻿<div class="container mt-4">
+    <h3>Temperature Converter</h3>
+    <p>Converts temperature between Celsius and Fahrenheit.</p>
+
+    <form method="post">
+        <input type="number" step="any" name="value"
+               class="form-control mb-2" placeholder="Enter value" required />
+
+        <select name="type" class="form-select mb-2">
+            <option value="CtoF">Celsius → Fahrenheit</option>
+            <option value="FtoC">Fahrenheit → Celsius</option>
+        </select>
+
+        <button class="btn btn-primary">Convert</button>
+    </form>
+
+    @if (ViewBag.Result != null)
+    {
+        <div class="alert alert-success mt-3">
+            Result: <b>@ViewBag.Result</b>
+        </div>
+    }
+</div>

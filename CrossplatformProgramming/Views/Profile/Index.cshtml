@@ -1,0 +1,12 @@
+﻿<div class="container mt-4">
+    <h2>User Profile</h2>
+
+    <p>
+        <b>Name:</b> @User.Identity?.Name
+    </p>
+
+    <a asp-controller="Account" asp-action="Logout"
+       class="btn btn-outline-danger">
+        Logout
+    </a>
+</div>

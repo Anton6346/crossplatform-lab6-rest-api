@@ -1,0 +1,16 @@
+﻿@model RegisterViewModel
+
+<div class="container mt-4">
+    <h2>Registration</h2>
+
+    <form asp-action="Register" method="post">
+        <input asp-for="Username" class="form-control mb-2" placeholder="Username" />
+        <input asp-for="FullName" class="form-control mb-2" placeholder="Full name" />
+        <input asp-for="Email" class="form-control mb-2" placeholder="Email" />
+        <input asp-for="Phone" class="form-control mb-2" placeholder="+380XXXXXXXXX" />
+        <input asp-for="Password" type="password" class="form-control mb-2" placeholder="Password" />
+        <input asp-for="ConfirmPassword" type="password" class="form-control mb-2" placeholder="Confirm password" />
+
+        <button class="btn btn-primary">Register</button>
+    </form>
+</div>

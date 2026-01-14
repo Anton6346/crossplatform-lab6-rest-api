@@ -1,0 +1,19 @@
+﻿<div class="container mt-4">
+    <h3>Prime Number Check</h3>
+    <p>Checks whether a number is prime.</p>
+
+    <form method="post">
+        <input type="number" name="number" class="form-control mb-2"
+               placeholder="Enter number" required />
+
+        <button class="btn btn-primary">Check</button>
+    </form>
+
+    @if (ViewBag.IsPrime != null)
+    {
+        <div class="alert alert-info mt-3">
+            Number @ViewBag.Number is
+            <b>@(ViewBag.IsPrime ? "PRIME" : "NOT PRIME")</b>
+        </div>
+    }
+</div>

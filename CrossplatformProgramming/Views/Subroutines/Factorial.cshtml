@@ -1,0 +1,18 @@
+﻿<div class="container mt-4">
+    <h3>Factorial</h3>
+    <p>Calculates factorial of a non-negative integer.</p>
+
+    <form method="post">
+        <input type="number" name="number" class="form-control mb-2"
+               min="0" placeholder="Enter number" required />
+
+        <button class="btn btn-primary">Calculate</button>
+    </form>
+
+    @if (ViewBag.Result != null)
+    {
+        <div class="alert alert-success mt-3">
+            Factorial of @ViewBag.Number is <b>@ViewBag.Result</b>
+        </div>
+    }
+</div>
